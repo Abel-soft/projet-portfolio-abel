@@ -1,0 +1,12 @@
+@import url("color.css");
+@import url("framework/utiles.css");
+@import url("styles.css");
+@import url("components/header.css");
+@import url("components/acceuil.css");
+@import url("components/framesKey.css");
+@import url("components/portfolio.css");
+@import url("components/about.css");
+@import url("components/competence.css");
+@import url("components/mobile.css");
+@import url("components/contact.css");
+@import url("components/footer.css");

@@ -1,0 +1,103 @@
+.bar{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+.grogresse-bar{
+    position: relative;
+    width: 400px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards ;
+    transform: scaleX(0);
+    transform-origin:left; 
+
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.grogresse-bar span{
+    position: absolute;
+    height: 100%;
+    background-color:var(--main-color);
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards ;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.grogresse-bar.html span{
+    width: 90%;  
+}
+.grogresse-bar.css span{
+    width: 75%;  
+}
+.grogresse-bar.javascript span , .symfony span,.python span,.jquery span,.django span{
+    width: 65%;  
+}
+.grogresse-bar.bootstrap span{
+    width: 80%;  
+}
+.grogresse-bar.php span{
+    width: 70%;  
+}
+.grogresse-bar span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color:var(--main-color);
+    color: var(--main-color-white);
+    border-radius: 3px;
+    font-size: 12px;
+    top: -26px;
+    right: -20px;
+    animation: animateText 0.5s 1.5s linear forwards  ;
+    opacity: 0;
+}
+.grogresse-bar.html span::after{
+    content: "90%";  
+}
+.grogresse-bar.css span::after{
+    content: "75%";  
+}
+.grogresse-bar.javascript span::after , .symfony span::after,.python span::after,.jquery span::after,.django span::after{
+    content: "65%";  
+}
+.grogresse-bar.bootstrap span::after{
+    content: "80%";  
+}
+.grogresse-bar.php span::after{
+    content: "70%";  
+}
+.grogresse-bar span::before{
+    content: ""; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width:0px ;
+    border-right-width: 0px;
+    border-top-color:var(--main-color) ;
+    top: -10px;
+    right: 0;
+    animation: animateText 0.5s 1.5s linear forwards  ;
+    opacity: 0;
+}
+@keyframes animateText {
+    100%{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 992px) {
+    .grogresse-bar{
+        width: 350px;
+    }
+  
+  }
+@media screen and (max-width: 720px) {
+    .grogresse-bar{
+        width: 300px;
+    }
+  
+  }
