@@ -23,7 +23,7 @@ section .heading h1::before{
 }
 .video-tuto{
     margin-top: 20px;
-    height: 100vh;
+    
 }
 /****overlay*****/
 .overlay{
